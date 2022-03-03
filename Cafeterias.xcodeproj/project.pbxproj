@@ -11,6 +11,10 @@
 		C76AA65027CFEE92003414AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA64F27CFEE92003414AB /* ContentView.swift */; };
 		C76AA65227CFEE94003414AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76AA65127CFEE94003414AB /* Assets.xcassets */; };
 		C76AA65527CFEE94003414AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76AA65427CFEE94003414AB /* Preview Assets.xcassets */; };
+		C76AA65C27CFF327003414AB /* Pedidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA65B27CFF327003414AB /* Pedidos.swift */; };
+		C76AA65F27D002C0003414AB /* Cafeterias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA65E27D002C0003414AB /* Cafeterias.swift */; };
+		C76AA66227D00495003414AB /* DetalleCafeteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA66127D00495003414AB /* DetalleCafeteria.swift */; };
+		C76AA66427D00CCC003414AB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76AA66327D00CCC003414AB /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		C76AA64F27CFEE92003414AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C76AA65127CFEE94003414AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C76AA65427CFEE94003414AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C76AA65B27CFF327003414AB /* Pedidos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedidos.swift; sourceTree = "<group>"; };
+		C76AA65E27D002C0003414AB /* Cafeterias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafeterias.swift; sourceTree = "<group>"; };
+		C76AA66127D00495003414AB /* DetalleCafeteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleCafeteria.swift; sourceTree = "<group>"; };
+		C76AA66327D00CCC003414AB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 		C76AA64127CFEE92003414AB = {
 			isa = PBXGroup;
 			children = (
+				C76AA66327D00CCC003414AB /* Launch Screen.storyboard */,
 				C76AA64C27CFEE92003414AB /* Cafeterias */,
 				C76AA64B27CFEE92003414AB /* Products */,
 			);
@@ -51,8 +60,8 @@
 		C76AA64C27CFEE92003414AB /* Cafeterias */ = {
 			isa = PBXGroup;
 			children = (
-				C76AA64D27CFEE92003414AB /* CafeteriasApp.swift */,
-				C76AA64F27CFEE92003414AB /* ContentView.swift */,
+				C76AA66027D00374003414AB /* vistas */,
+				C76AA65D27D002AD003414AB /* Data */,
 				C76AA65127CFEE94003414AB /* Assets.xcassets */,
 				C76AA65327CFEE94003414AB /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				C76AA65427CFEE94003414AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C76AA65D27D002AD003414AB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C76AA65E27D002C0003414AB /* Cafeterias.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C76AA66027D00374003414AB /* vistas */ = {
+			isa = PBXGroup;
+			children = (
+				C76AA64D27CFEE92003414AB /* CafeteriasApp.swift */,
+				C76AA64F27CFEE92003414AB /* ContentView.swift */,
+				C76AA65B27CFF327003414AB /* Pedidos.swift */,
+				C76AA66127D00495003414AB /* DetalleCafeteria.swift */,
+			);
+			path = vistas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76AA66427D00CCC003414AB /* Launch Screen.storyboard in Resources */,
 				C76AA65527CFEE94003414AB /* Preview Assets.xcassets in Resources */,
 				C76AA65227CFEE94003414AB /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76AA65027CFEE92003414AB /* ContentView.swift in Sources */,
+				C76AA66227D00495003414AB /* DetalleCafeteria.swift in Sources */,
 				C76AA64E27CFEE92003414AB /* CafeteriasApp.swift in Sources */,
+				C76AA65F27D002C0003414AB /* Cafeterias.swift in Sources */,
+				C76AA65C27CFF327003414AB /* Pedidos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +307,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,6 +337,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

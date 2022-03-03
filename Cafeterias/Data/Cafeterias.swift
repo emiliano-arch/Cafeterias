@@ -17,6 +17,11 @@ struct cafeteria{
     
 }
 
-struct comidas{
+struct comida{
+    var id: Int
+    var nombre: String
+    var precio: Float
+    var imagen: Image
+    var descripcion: String
     
 }

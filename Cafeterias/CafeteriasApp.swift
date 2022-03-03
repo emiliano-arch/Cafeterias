@@ -11,7 +11,9 @@ import SwiftUI
 struct CafeteriasApp: App {
     var body: some Scene {
         WindowGroup {
-           ContentView()
+            
+            Pedidos()
+           
            // DetalleCafeteria()
         }
     }

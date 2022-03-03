@@ -13,8 +13,11 @@
 		C76AA65527CFEE94003414AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76AA65427CFEE94003414AB /* Preview Assets.xcassets */; };
 		C76AA65C27CFF327003414AB /* Pedidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA65B27CFF327003414AB /* Pedidos.swift */; };
 		C76AA65F27D002C0003414AB /* Cafeterias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA65E27D002C0003414AB /* Cafeterias.swift */; };
-		C76AA66227D00495003414AB /* DetalleCafeteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA66127D00495003414AB /* DetalleCafeteria.swift */; };
 		C76AA66427D00CCC003414AB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76AA66327D00CCC003414AB /* Launch Screen.storyboard */; };
+		C77731FB27D1669C0074EAC2 /* moldeComidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77731FA27D1669C0074EAC2 /* moldeComidas.swift */; };
+		C77731FD27D16EC80074EAC2 /* ComidaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77731FC27D16EC80074EAC2 /* ComidaDetailView.swift */; };
+		C7C46BEC27D157E800159294 /* moldeRenglon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C46BEB27D157E800159294 /* moldeRenglon.swift */; };
+		C7C46BEE27D1624E00159294 /* CoffeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C46BED27D1624E00159294 /* CoffeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +28,11 @@
 		C76AA65427CFEE94003414AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C76AA65B27CFF327003414AB /* Pedidos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedidos.swift; sourceTree = "<group>"; };
 		C76AA65E27D002C0003414AB /* Cafeterias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafeterias.swift; sourceTree = "<group>"; };
-		C76AA66127D00495003414AB /* DetalleCafeteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleCafeteria.swift; sourceTree = "<group>"; };
 		C76AA66327D00CCC003414AB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C77731FA27D1669C0074EAC2 /* moldeComidas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moldeComidas.swift; sourceTree = "<group>"; };
+		C77731FC27D16EC80074EAC2 /* ComidaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidaDetailView.swift; sourceTree = "<group>"; };
+		C7C46BEB27D157E800159294 /* moldeRenglon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moldeRenglon.swift; sourceTree = "<group>"; };
+		C7C46BED27D1624E00159294 /* CoffeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +66,13 @@
 		C76AA64C27CFEE92003414AB /* Cafeterias */ = {
 			isa = PBXGroup;
 			children = (
-				C76AA66027D00374003414AB /* vistas */,
+				C76AA64D27CFEE92003414AB /* CafeteriasApp.swift */,
+				C76AA64F27CFEE92003414AB /* ContentView.swift */,
+				C76AA65B27CFF327003414AB /* Pedidos.swift */,
+				C7C46BED27D1624E00159294 /* CoffeDetailView.swift */,
+				C7C46BEB27D157E800159294 /* moldeRenglon.swift */,
+				C77731FA27D1669C0074EAC2 /* moldeComidas.swift */,
+				C77731FC27D16EC80074EAC2 /* ComidaDetailView.swift */,
 				C76AA65D27D002AD003414AB /* Data */,
 				C76AA65127CFEE94003414AB /* Assets.xcassets */,
 				C76AA65327CFEE94003414AB /* Preview Content */,
@@ -82,17 +94,6 @@
 				C76AA65E27D002C0003414AB /* Cafeterias.swift */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		C76AA66027D00374003414AB /* vistas */ = {
-			isa = PBXGroup;
-			children = (
-				C76AA64D27CFEE92003414AB /* CafeteriasApp.swift */,
-				C76AA64F27CFEE92003414AB /* ContentView.swift */,
-				C76AA65B27CFF327003414AB /* Pedidos.swift */,
-				C76AA66127D00495003414AB /* DetalleCafeteria.swift */,
-			);
-			path = vistas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76AA65027CFEE92003414AB /* ContentView.swift in Sources */,
-				C76AA66227D00495003414AB /* DetalleCafeteria.swift in Sources */,
+				C7C46BEE27D1624E00159294 /* CoffeDetailView.swift in Sources */,
+				C77731FB27D1669C0074EAC2 /* moldeComidas.swift in Sources */,
+				C7C46BEC27D157E800159294 /* moldeRenglon.swift in Sources */,
+				C77731FD27D16EC80074EAC2 /* ComidaDetailView.swift in Sources */,
 				C76AA64E27CFEE92003414AB /* CafeteriasApp.swift in Sources */,
 				C76AA65F27D002C0003414AB /* Cafeterias.swift in Sources */,
 				C76AA65C27CFF327003414AB /* Pedidos.swift in Sources */,

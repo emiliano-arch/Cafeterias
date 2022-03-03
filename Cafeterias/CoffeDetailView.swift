@@ -1,16 +1,17 @@
 //
-//  DetalleCafeteria.swift
+//  CoffeDetailView.swift
 //  Cafeterias
 //
-//  Created by Emiliano  Medina Delgado  on 02/03/22.
+//  Created by Emiliano  Medina Delgado  on 03/03/22.
 //
 
 import SwiftUI
 
-struct DetalleCafeteria: View {
+var comidas = [comida(id: 1, nombre: "hamburgesa", precio: 40, imagen: Image("Hamburgesa"), descripcion: "Sencilla"), comida(id: 2, nombre: "hamburgesa Hawaiana", precio: 60, imagen: Image("Hamburgesa"), descripcion: "Con piña, jamon  y queso derretido")]
+
+struct CoffeDetailView: View {
     
-    var coffe: cafeteria
-    
+    var coffe :cafeteria
     
     var body: some View {
         VStack{
@@ -28,7 +29,16 @@ struct DetalleCafeteria: View {
                 
             }
             
+            NavigationView{
+                List(comidas, id: \.id){ i in
+                    moldeComidas(food: i)
+                    
+                }
+                
+                .navigationTitle("Menú")
+            }
             
+            /*
             Spacer()
             HStack{
                 Image("Comida").resizable()
@@ -49,15 +59,15 @@ struct DetalleCafeteria: View {
                 Image("Comida").resizable()
                 Image("Comida").resizable()
             }
-            
+            */
             
             
         }
     }
 }
 
-struct DetalleCafeteria_Previews: PreviewProvider {
+struct CoffeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetalleCafeteria(coffe: cafeteria(id: 1, nombre: "La cabaña", ubicacion: "en la entrada mas cercana a trabajo social", imagen: Image("EjemploCafe")))
+        CoffeDetailView(coffe: cafeteria(id: 1, nombre: "El cafesin", ubicacion: "en la entrada mas cercana a trabajo social", imagen: Image("EjemploCafe")))
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct moldeComidas: View {
-    
+    @State private var show = false
     var food :comida
     
     var body: some View {
@@ -23,7 +23,10 @@ struct moldeComidas: View {
             }
             food.imagen.resizable()
                 .frame(width: 150, height: 150, alignment: .leading)
-        }
+            Button("") {
+                show = true
+            }
+        }.sheet(isPresented: $show, content:{ ComidaDetailModalView(detalle: food)})
     }
 }
 

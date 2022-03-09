@@ -11,32 +11,62 @@ var comidas = [comida(id: 1, nombre: "hamburgesa", precio: 40, imagen: Image("Ha
 
 struct CoffeDetailView: View {
     
+    
+    
     var coffe :cafeteria
+  var imageVisible = true
+    
     
     var body: some View {
+        
         VStack{
-            ZStack{
-                
-                coffe.imagen
-                    .resizable()
-                    .frame(width: 400, height: 300, alignment: .top)
-                Text(coffe.nombre)
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .foregroundColor(.black)
+            
+            
+            if imageVisible {
+                ZStack{
                     
-                
-                
+                    coffe.imagen
+                        .resizable()
+                        .frame(width: 400, height: 200, alignment: .top)
+                    Text(coffe.nombre)
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                        .foregroundColor(.black)
+  
+                }
+                NavigationView{
+                    List(comidas, id: \.id){ i in
+                        
+                        NavigationLink(destination: ComidaDetailView(detalle: i)){
+                            
+                            moldeComidas(food: i)
+                            
+                        } .padding(10)
+                        
+                        
+                    }
+                    
+                    .navigationTitle("Menú")
+                }
+            } else{
+                NavigationView{
+                    List(comidas, id: \.id){ i in
+                        
+                        NavigationLink(destination: ComidaDetailView(detalle: i)){
+                            
+                            moldeComidas(food: i)
+                            
+                        } .padding(10)
+                        
+                        
+                    }
+                    
+                    .navigationTitle("Menú")
+                }
             }
             
-            NavigationView{
-                List(comidas, id: \.id){ i in
-                    moldeComidas(food: i)
-                    
-                }
-                
-                .navigationTitle("Menú")
-            }
+            
+            
             
             /*
             Spacer()

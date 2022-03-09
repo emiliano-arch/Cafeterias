@@ -21,7 +21,7 @@ struct Pedidos: View {
             List(cafeteriasMuestra, id: \.id){
                 cafe in
                 
-                NavigationLink(destination: CoffeDetailView(coffe: cafe)) {
+                NavigationLink(destination: CoffeDetailModalView(coffe: cafe)) {
                     
                     moldeRenglon(cafeteriaStandar: cafe)
                 
@@ -48,6 +48,9 @@ struct Pedidos: View {
 
 struct Pedidos_Previews: PreviewProvider {
     static var previews: some View {
-        Pedidos()
+        Group {
+            Pedidos()
+            
+        }
     }
 }

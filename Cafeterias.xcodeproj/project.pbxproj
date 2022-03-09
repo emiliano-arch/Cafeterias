@@ -18,6 +18,8 @@
 		C77731FD27D16EC80074EAC2 /* ComidaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77731FC27D16EC80074EAC2 /* ComidaDetailView.swift */; };
 		C7C46BEC27D157E800159294 /* moldeRenglon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C46BEB27D157E800159294 /* moldeRenglon.swift */; };
 		C7C46BEE27D1624E00159294 /* CoffeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C46BED27D1624E00159294 /* CoffeDetailView.swift */; };
+		C7CBA19127D9285200C639D5 /* ComidaDetailModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CBA19027D9285200C639D5 /* ComidaDetailModalView.swift */; };
+		C7CBA19327D92A3A00C639D5 /* CoffeDetailModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CBA19227D92A3A00C639D5 /* CoffeDetailModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		C77731FC27D16EC80074EAC2 /* ComidaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidaDetailView.swift; sourceTree = "<group>"; };
 		C7C46BEB27D157E800159294 /* moldeRenglon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moldeRenglon.swift; sourceTree = "<group>"; };
 		C7C46BED27D1624E00159294 /* CoffeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeDetailView.swift; sourceTree = "<group>"; };
+		C7CBA19027D9285200C639D5 /* ComidaDetailModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidaDetailModalView.swift; sourceTree = "<group>"; };
+		C7CBA19227D92A3A00C639D5 /* CoffeDetailModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeDetailModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				C76AA64D27CFEE92003414AB /* CafeteriasApp.swift */,
-				C76AA64F27CFEE92003414AB /* ContentView.swift */,
-				C76AA65B27CFF327003414AB /* Pedidos.swift */,
-				C7C46BED27D1624E00159294 /* CoffeDetailView.swift */,
-				C7C46BEB27D157E800159294 /* moldeRenglon.swift */,
-				C77731FA27D1669C0074EAC2 /* moldeComidas.swift */,
-				C77731FC27D16EC80074EAC2 /* ComidaDetailView.swift */,
+				C76E014027D24AEF005C468A /* View */,
 				C76AA65D27D002AD003414AB /* Data */,
 				C76AA65127CFEE94003414AB /* Assets.xcassets */,
 				C76AA65327CFEE94003414AB /* Preview Content */,
@@ -94,6 +93,53 @@
 				C76AA65E27D002C0003414AB /* Cafeterias.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		C76E013F27D24ADD005C468A /* Moldes */ = {
+			isa = PBXGroup;
+			children = (
+				C7C46BEB27D157E800159294 /* moldeRenglon.swift */,
+				C77731FA27D1669C0074EAC2 /* moldeComidas.swift */,
+			);
+			path = Moldes;
+			sourceTree = "<group>";
+		};
+		C76E014027D24AEF005C468A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C76AA64F27CFEE92003414AB /* ContentView.swift */,
+				C76AA65B27CFF327003414AB /* Pedidos.swift */,
+				C76E013F27D24ADD005C468A /* Moldes */,
+				C76E014127D24B1C005C468A /* Details */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C76E014127D24B1C005C468A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7517327D92EB30026A10A /* navigationView */,
+				C7CBA18F27D9283200C639D5 /* Modal */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		C7CBA18F27D9283200C639D5 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				C7CBA19027D9285200C639D5 /* ComidaDetailModalView.swift */,
+				C7CBA19227D92A3A00C639D5 /* CoffeDetailModalView.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		C7D7517327D92EB30026A10A /* navigationView */ = {
+			isa = PBXGroup;
+			children = (
+				C7C46BED27D1624E00159294 /* CoffeDetailView.swift */,
+				C77731FC27D16EC80074EAC2 /* ComidaDetailView.swift */,
+			);
+			path = navigationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +215,8 @@
 			files = (
 				C76AA65027CFEE92003414AB /* ContentView.swift in Sources */,
 				C7C46BEE27D1624E00159294 /* CoffeDetailView.swift in Sources */,
+				C7CBA19127D9285200C639D5 /* ComidaDetailModalView.swift in Sources */,
+				C7CBA19327D92A3A00C639D5 /* CoffeDetailModalView.swift in Sources */,
 				C77731FB27D1669C0074EAC2 /* moldeComidas.swift in Sources */,
 				C7C46BEC27D157E800159294 /* moldeRenglon.swift in Sources */,
 				C77731FD27D16EC80074EAC2 /* ComidaDetailView.swift in Sources */,

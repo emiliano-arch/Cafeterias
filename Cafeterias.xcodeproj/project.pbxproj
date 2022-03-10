@@ -11,6 +11,15 @@
 		C76AA65027CFEE92003414AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA64F27CFEE92003414AB /* ContentView.swift */; };
 		C76AA65227CFEE94003414AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76AA65127CFEE94003414AB /* Assets.xcassets */; };
 		C76AA65527CFEE94003414AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76AA65427CFEE94003414AB /* Preview Assets.xcassets */; };
+		C76AA65C27CFF327003414AB /* Pedidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA65B27CFF327003414AB /* Pedidos.swift */; };
+		C76AA65F27D002C0003414AB /* Cafeterias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA65E27D002C0003414AB /* Cafeterias.swift */; };
+		C76AA66427D00CCC003414AB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76AA66327D00CCC003414AB /* Launch Screen.storyboard */; };
+		C77731FB27D1669C0074EAC2 /* moldeComidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77731FA27D1669C0074EAC2 /* moldeComidas.swift */; };
+		C77731FD27D16EC80074EAC2 /* ComidaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77731FC27D16EC80074EAC2 /* ComidaDetailView.swift */; };
+		C7C46BEC27D157E800159294 /* moldeRenglon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C46BEB27D157E800159294 /* moldeRenglon.swift */; };
+		C7C46BEE27D1624E00159294 /* CoffeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C46BED27D1624E00159294 /* CoffeDetailView.swift */; };
+		C7CBA19127D9285200C639D5 /* ComidaDetailModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CBA19027D9285200C639D5 /* ComidaDetailModalView.swift */; };
+		C7CBA19327D92A3A00C639D5 /* CoffeDetailModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CBA19227D92A3A00C639D5 /* CoffeDetailModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		C76AA64F27CFEE92003414AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C76AA65127CFEE94003414AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C76AA65427CFEE94003414AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C76AA65B27CFF327003414AB /* Pedidos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedidos.swift; sourceTree = "<group>"; };
+		C76AA65E27D002C0003414AB /* Cafeterias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafeterias.swift; sourceTree = "<group>"; };
+		C76AA66327D00CCC003414AB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C77731FA27D1669C0074EAC2 /* moldeComidas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moldeComidas.swift; sourceTree = "<group>"; };
+		C77731FC27D16EC80074EAC2 /* ComidaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidaDetailView.swift; sourceTree = "<group>"; };
+		C7C46BEB27D157E800159294 /* moldeRenglon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moldeRenglon.swift; sourceTree = "<group>"; };
+		C7C46BED27D1624E00159294 /* CoffeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeDetailView.swift; sourceTree = "<group>"; };
+		C7CBA19027D9285200C639D5 /* ComidaDetailModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidaDetailModalView.swift; sourceTree = "<group>"; };
+		C7CBA19227D92A3A00C639D5 /* CoffeDetailModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeDetailModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +53,7 @@
 		C76AA64127CFEE92003414AB = {
 			isa = PBXGroup;
 			children = (
+				C76AA66327D00CCC003414AB /* Launch Screen.storyboard */,
 				C76AA64C27CFEE92003414AB /* Cafeterias */,
 				C76AA64B27CFEE92003414AB /* Products */,
 			);
@@ -52,7 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				C76AA64D27CFEE92003414AB /* CafeteriasApp.swift */,
-				C76AA64F27CFEE92003414AB /* ContentView.swift */,
+				C76E014027D24AEF005C468A /* View */,
+				C76AA65D27D002AD003414AB /* Data */,
 				C76AA65127CFEE94003414AB /* Assets.xcassets */,
 				C76AA65327CFEE94003414AB /* Preview Content */,
 			);
@@ -65,6 +85,61 @@
 				C76AA65427CFEE94003414AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C76AA65D27D002AD003414AB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C76AA65E27D002C0003414AB /* Cafeterias.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C76E013F27D24ADD005C468A /* Moldes */ = {
+			isa = PBXGroup;
+			children = (
+				C7C46BEB27D157E800159294 /* moldeRenglon.swift */,
+				C77731FA27D1669C0074EAC2 /* moldeComidas.swift */,
+			);
+			path = Moldes;
+			sourceTree = "<group>";
+		};
+		C76E014027D24AEF005C468A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C76AA64F27CFEE92003414AB /* ContentView.swift */,
+				C76AA65B27CFF327003414AB /* Pedidos.swift */,
+				C76E013F27D24ADD005C468A /* Moldes */,
+				C76E014127D24B1C005C468A /* Details */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C76E014127D24B1C005C468A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7517327D92EB30026A10A /* navigationView */,
+				C7CBA18F27D9283200C639D5 /* Modal */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		C7CBA18F27D9283200C639D5 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				C7CBA19027D9285200C639D5 /* ComidaDetailModalView.swift */,
+				C7CBA19227D92A3A00C639D5 /* CoffeDetailModalView.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		C7D7517327D92EB30026A10A /* navigationView */ = {
+			isa = PBXGroup;
+			children = (
+				C7C46BED27D1624E00159294 /* CoffeDetailView.swift */,
+				C77731FC27D16EC80074EAC2 /* ComidaDetailView.swift */,
+			);
+			path = navigationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76AA66427D00CCC003414AB /* Launch Screen.storyboard in Resources */,
 				C76AA65527CFEE94003414AB /* Preview Assets.xcassets in Resources */,
 				C76AA65227CFEE94003414AB /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +214,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76AA65027CFEE92003414AB /* ContentView.swift in Sources */,
+				C7C46BEE27D1624E00159294 /* CoffeDetailView.swift in Sources */,
+				C7CBA19127D9285200C639D5 /* ComidaDetailModalView.swift in Sources */,
+				C7CBA19327D92A3A00C639D5 /* CoffeDetailModalView.swift in Sources */,
+				C77731FB27D1669C0074EAC2 /* moldeComidas.swift in Sources */,
+				C7C46BEC27D157E800159294 /* moldeRenglon.swift in Sources */,
+				C77731FD27D16EC80074EAC2 /* ComidaDetailView.swift in Sources */,
 				C76AA64E27CFEE92003414AB /* CafeteriasApp.swift in Sources */,
+				C76AA65F27D002C0003414AB /* Cafeterias.swift in Sources */,
+				C76AA65C27CFF327003414AB /* Pedidos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +359,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,6 +389,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

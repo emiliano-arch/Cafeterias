@@ -35,6 +35,9 @@ struct ComidaDetailModalView: View {
                     .cornerRadius(3.2)
                     .overlay(Rectangle().stroke(Color.gray, lineWidth: 3)).shadow(color: Color.gray, radius: .pi, x: -9, y: -1)
             Spacer()
+            
+            
+            
         }
     }
 }

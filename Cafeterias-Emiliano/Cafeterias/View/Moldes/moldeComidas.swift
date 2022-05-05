@@ -32,6 +32,6 @@ struct moldeComidas: View {
 
 struct moldeComidas_Previews: PreviewProvider {
     static var previews: some View {
-        moldeComidas(food: comida(id: 1, nombre: "hamburgesa", precio: 40.50, imagen: Image("Hamburgesa"), descripcion: "Sencilla"))
+        moldeComidas(food: comida(id: 1, nombre: "hamburgesa", precio: 40.50, imagen: Image("Hamburgesa"), descripcion: "Sencilla", cantidad: 1))
     }
 }

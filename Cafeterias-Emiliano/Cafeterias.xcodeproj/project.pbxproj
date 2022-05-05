@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		699C6FD527DA9B06008297E1 /* CarritoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699C6FD427DA9B06008297E1 /* CarritoView.swift */; };
 		C76AA64E27CFEE92003414AB /* CafeteriasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA64D27CFEE92003414AB /* CafeteriasApp.swift */; };
 		C76AA65027CFEE92003414AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76AA64F27CFEE92003414AB /* ContentView.swift */; };
 		C76AA65227CFEE94003414AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76AA65127CFEE94003414AB /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		699C6FD427DA9B06008297E1 /* CarritoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoView.swift; sourceTree = "<group>"; };
 		C76AA64A27CFEE92003414AB /* Cafeterias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafeterias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76AA64D27CFEE92003414AB /* CafeteriasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeteriasApp.swift; sourceTree = "<group>"; };
 		C76AA64F27CFEE92003414AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			children = (
 				C7C46BEB27D157E800159294 /* moldeRenglon.swift */,
 				C77731FA27D1669C0074EAC2 /* moldeComidas.swift */,
-				699C6FD427DA9B06008297E1 /* CarritoView.swift */,
 				C7C46BED27D1624E00159294 /* CarritoDetailView.swift */,
 			);
 			path = Moldes;
@@ -225,7 +222,6 @@
 				C77731FD27D16EC80074EAC2 /* ComidaDetailView.swift in Sources */,
 				C76AA64E27CFEE92003414AB /* CafeteriasApp.swift in Sources */,
 				C76AA65F27D002C0003414AB /* Cafeterias.swift in Sources */,
-				699C6FD527DA9B06008297E1 /* CarritoView.swift in Sources */,
 				C76AA65C27CFF327003414AB /* Pedidos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

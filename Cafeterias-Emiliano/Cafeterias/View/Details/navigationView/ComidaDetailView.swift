@@ -66,6 +66,6 @@ struct ComidaDetailView: View {
 
 struct ComidaDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ComidaDetailView(detalle: comida(id: 1, nombre: "Hamburgesa", precio: 40.99, imagen: Image("Hamburgesa"), descripcion: "Sencilla"))
+        ComidaDetailView(detalle: comida(id: 1, nombre: "Hamburgesa", precio: 40.99, imagen: Image("Hamburgesa"), descripcion: "Sencilla", cantidad: 1))
     }
 }

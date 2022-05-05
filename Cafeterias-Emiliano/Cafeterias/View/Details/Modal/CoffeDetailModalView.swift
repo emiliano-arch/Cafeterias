@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-var comidasModal = [comida(id: 1, nombre: "hamburgesa", precio: 40, imagen: Image("Hamburgesa"), descripcion: "Sencilla"), comida(id: 2, nombre: "hamburgesa Hawaiana", precio: 60, imagen: Image("Hamburgesa"), descripcion: "Con piña, jamon  y queso derretido")]
+var comidasModal = [comida(id: 1, nombre: "hamburgesa", precio: 40, imagen: Image("Hamburgesa"), descripcion: "Sencilla", cantidad: 1), comida(id: 2, nombre: "hamburgesa Hawaiana", precio: 60, imagen: Image("Hamburgesa"), descripcion: "Con piña, jamon  y queso derretido", cantidad: 1)]
 
 struct CoffeDetailModalView: View {
     
@@ -38,36 +38,6 @@ struct CoffeDetailModalView: View {
        
                     }
                     
-                  
-            
-            
-            
-            
-            
-            /*
-            Spacer()
-            HStack{
-                Image("Comida").resizable()
-                    .padding(0)
-                Image("Comida").resizable()
-                    .padding(0)
-                Image("Comida").resizable()
-            }
-            Spacer()
-            HStack{
-                Image("Comida").resizable()
-                Image("Comida").resizable()
-                Image("Comida").resizable()
-            }
-            Spacer()
-            HStack{
-                Image("Comida").resizable()
-                Image("Comida").resizable()
-                Image("Comida").resizable()
-            }
-            */
-            
-            
         }
     }
 }

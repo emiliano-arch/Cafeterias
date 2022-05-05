@@ -7,9 +7,8 @@
 
 import SwiftUI
 
-var comidas = [comida(id: 1, nombre: "hamburgesa", precio: 40, imagen: Image("Hamburgesa"), descripcion: "Sencilla"), comida(id: 2, nombre: "hamburgesa Hawaiana", precio: 60, imagen: Image("Hamburgesa"), descripcion: "Con piña, jamon  y queso derretido")]
+var comidas = [comida(id: 1, nombre: "hamburgesa", precio: 40, imagen: Image("Hamburgesa"), descripcion: "Sencilla", cantidad: 1), comida(id: 2, nombre: "hamburgesa Hawaiana", precio: 60, imagen: Image("Hamburgesa"), descripcion: "Con piña, jamon  y queso derretido", cantidad: 1)]
 
-var carrito = [comida(id: 1, nombre: "hamburgesa", precio: 40, imagen: Image("Hamburgesa"), descripcion: "Sencilla"), comida(id: 2, nombre: "hamburgesa Hawaiana", precio: 60, imagen: Image("Hamburgesa"), descripcion: "Con piña, jamon  y queso derretido")]
 
 struct CarritoDetailView: View {
     
@@ -46,6 +45,6 @@ struct CarritoDetailView: View {
 
 struct CarritoDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CarritoDetailView(total: .constant(0.0), detalleCarrito: comida(id: 1, nombre: "Hamburgesa", precio: 40.90, imagen: Image("Hamburgesa"), descripcion: "Sencilla con queso"))
+        CarritoDetailView(total: .constant(0.0), detalleCarrito: comida(id: 1, nombre: "Hamburgesa", precio: 40.90, imagen: Image("Hamburgesa"), descripcion: "Sencilla con queso", cantidad: 1))
     }
 }

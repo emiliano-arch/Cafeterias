@@ -23,6 +23,8 @@ struct comida{
     var precio: Float
     var imagen: Image
     var descripcion: String
+    var cantidad: Int
+    
     
 }
 
